@@ -1,85 +1,60 @@
-# weather-prediction-classification-
-A machine learning classification model to predict weather conditions (Sunny, Rainy, Cloudy) using features like temperature, humidity, wind speed, precipitation, cloud cover, pressure, UV index, visibility, season, and location. Useful for forecasting and decision-making.
-🌦️ Weather Prediction (Classification)
-This project uses machine learning to classify weather conditions such as Sunny, Rainy, and Cloudy based on multiple atmospheric and environmental features. Accurate weather classification helps in better forecasting, planning, and building climate-aware applications.
+Weather Prediction (Classification) - Machine Learning Project :
+This project demonstrates a supervised machine learning classification model developed to predict weather conditions (Sunny, Cloudy, Rainy) based on various environmental and meteorological parameters. It showcases my ability to work with structured data, apply end-to-end ML workflows, and deliver accurate predictions through model optimization and evaluation.
 
-📊 Project Overview
-The goal of this project is to develop a classification model that predicts the type of weather using structured weather data. By analyzing various features like temperature, humidity, UV index, and cloud cover, the model can determine the expected weather condition for a given set of values.
+Objective
+The objective of this project is to build a robust classification model that can accurately predict the type of weather using real-world weather data. This involves understanding the dataset, applying preprocessing techniques, training multiple models, and selecting the best-performing one using evaluation metrics.
 
-🧠 Features Used
-The dataset includes the following features:
+Dataset Features
+The dataset contains the following key features:
 
-Temperature (°C)
+Feature	Description
+Temperature (°C)	Current temperature
+Humidity (%)	Moisture content in the air
+Wind Speed (km/h)	Speed of the wind
+Precipitation (%)	Rainfall probability
+Cloud Cover	Sky condition (Clear, Cloudy, Overcast)
+Atmospheric Pressure	Pressure at sea level
+UV Index	Intensity of ultraviolet radiation
+Season	Season during observation (Spring, Winter)
+Visibility (km)	Visibility range
+Location Type	Geographic type (Inland, Coastal, Mountain)
+Target	Weather Type (Sunny, Rainy, Cloudy)
 
-Humidity (%)
-
-Wind Speed (km/h)
-
-Precipitation (%)
-
-Cloud Cover (Clear / Partly Cloudy / Overcast)
-
-Atmospheric Pressure (hPa)
-
-UV Index
-
-Season (Winter, Spring, etc.)
-
-Visibility (km)
-
-Location Type (Inland, Coastal, Mountain)
-
-Target Variable: Weather Type (Sunny, Rainy, Cloudy)
-
-🔍 Approach
-Data Preprocessing
-
-Handled missing values
-
-Encoded categorical variables
-
-Normalized numeric features
-
-Model Training
-
-Tested multiple classification models (e.g., Random Forest, Decision Tree, KNN)
-
-Performed hyperparameter tuning using GridSearchCV
-
-Evaluation
-
-Used metrics such as Accuracy, Precision, Recall, F1-score
-
-Visualized performance using Confusion Matrix
-
-🛠️ Tools & Technologies
+🔧 Tools & Technologies
 Python
 
-Pandas, NumPy – Data manipulation
+Jupyter Notebook
 
-Matplotlib, Seaborn – Visualization
+Scikit-learn – ML models and preprocessing
 
-Scikit-learn – Model building and evaluation
+Pandas, NumPy – Data analysis and manipulation
 
-✅ Results
-The best-performing model achieved high accuracy in predicting weather types, with strong generalization across both training and testing datasets.
+Matplotlib, Seaborn – Data visualization
 
-📁 Project Structure
-Copy
-Edit
-weather-prediction-classification/
-│
-├── weather_data.csv
-├── weather_prediction.ipynb
-├── requirements.txt
-├── README.md
-└── models/
-📌 Future Improvements
-Add time-series forecasting features
+GridSearchCV – Hyperparameter tuning
 
-Deploy the model via a web app
+Workflow:
+Data Cleaning & Preprocessing
+Handled missing values
+Encoded categorical variables using Label Encoding
+Scaled numeric features if needed
+Model Building
+Trained and compared models: Random Forest, Decision Tree, KNN, Logistic Regression
+Performed hyperparameter tuning with GridSearchCV and RandomizedSearchCV
+Model Evaluation
+Metrics: Accuracy, Precision, Recall, F1-Score
+Visualized results using confusion matrix
 
-Collect real-time weather data via APIs
+Results
+Achieved high accuracy in predicting weather types on unseen test data.
+Random Forest and Decision Tree models performed exceptionally well.
+The model shows good generalization without overfitting.
 
-🙌 Acknowledgements
-This project was developed for educational purposes to demonstrate how machine learning can be applied in environmental and weather-related domains.
+
+📌 Skills Demonstrated
+✅ Data preprocessing & feature engineering
+✅ Exploratory Data Analysis (EDA)
+✅ Supervised machine learning (classification)
+✅ Hyperparameter tuning (GridSearchCV, RandomizedSearchCV)
+✅ Evaluation using classification metrics
+✅ Clean and modular coding in Python
